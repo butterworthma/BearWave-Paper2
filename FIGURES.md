@@ -198,6 +198,33 @@ python generators/fig28_raspberry_pi_cpu_throttling.py
 
 ---
 
+### **Figure 29: CPU Temperature Analysis (Three Charts)**
+**Script:** `system_monitoring/cpu_temperature_analysis.py`
+**Data:** `data/cpu_temperature_data.xlsx`
+
+```bash
+python system_monitoring/cpu_temperature_analysis.py
+```
+
+**Generated Charts:**
+- Comprehensive CPU Temperature Timeline Analysis
+- Thermal Performance Summary (2x2 layout)
+- System Health Status Dashboard
+
+**Key Features:**
+- **Timeline Analysis:** Temperature progression with moving averages
+- **Statistical Breakdown:** Temperature metrics and threshold analysis
+- **Performance Summary:** Time in temperature zones analysis
+- **Health Dashboard:** Overall system status assessment
+
+**Analysis Results:**
+- **Duration:** Extended monitoring period
+- **Thermal Management:** Effective cooling performance
+- **Reliability:** No thermal throttling events
+- **Operational Status:** Validated for field deployment
+
+---
+
 ## 📊 **Comprehensive Analysis Figures**
 
 ### **2x2 Comparison Charts**
@@ -241,6 +268,138 @@ python generators/generate_corrected_charts.py
 - Exact foF2 calculations matching original scripts
 - Standardized formatting across all charts
 - Timestamp-based file naming for version control
+
+---
+
+### **Six Standardized Charts Generator**
+**Script:** `generators/generate_six_standardized_charts.py`
+**Data:** `data/NVIS_data.xlsx`
+
+```bash
+python generators/generate_six_standardized_charts.py
+```
+
+**Generated Charts:**
+- All 6 core ionospheric analysis charts with standardized layout
+- Consistent formatting and color schemes
+- Professional publication-ready quality
+
+**Features:**
+- Standardized 2x2 panel layout for each chart
+- Consistent color coding across all analyses
+- Automated file naming and organization
+
+---
+
+### **Less Cluttered April 15th Charts**
+**Script:** `generators/generate_less_cluttered_april15th.py`
+**Data:** `data/NVIS_data.xlsx`
+
+```bash
+python generators/generate_less_cluttered_april15th.py
+```
+
+**Generated Charts:**
+- Simplified April 15th visualizations
+- Reduced visual clutter for clearer presentation
+- Alternative visualization options (heatmap, reduced lines)
+
+**Features:**
+- Interactive visualization type selection
+- Cleaner temporal progression displays
+- Enhanced readability for presentations
+
+---
+
+## 🤖 **Automation and Batch Processing**
+
+### **Run All 2x2 Charts**
+**Script:** `automation/run_all_2x2_charts.py`
+**Data:** `data/NVIS_data.xlsx`
+
+```bash
+python automation/run_all_2x2_charts.py
+```
+
+**Features:**
+- Executes all 6 core foF2 analysis scripts automatically
+- Generates comprehensive 2x2 chart comparisons
+- Displays generated charts interactively
+- Progress tracking and error handling
+
+---
+
+### **Apply Standardized Format to All**
+**Script:** `automation/apply_standardized_format_to_all.py`
+**Data:** `data/NVIS_data.xlsx`
+
+```bash
+python automation/apply_standardized_format_to_all.py
+```
+
+**Features:**
+- Applies consistent formatting to all analysis scripts
+- Ensures standardized output across all charts
+- Batch processing with progress indicators
+
+---
+
+### **Generate All Charts to Test Folder**
+**Script:** `automation/generate_all_charts_to_test_folder.py`
+**Data:** `data/NVIS_data.xlsx`
+
+```bash
+python automation/generate_all_charts_to_test_folder.py
+```
+
+**Features:**
+- Generates all charts to organized test directory
+- Comprehensive batch processing of all analysis types
+- Detailed progress reporting and file organization
+
+---
+
+## 🖥️ **Interactive Display and Utilities**
+
+### **Show All 2x2 Charts**
+**Script:** `utilities/show_all_2x2_charts.py`
+
+```bash
+python utilities/show_all_2x2_charts.py
+```
+
+**Features:**
+- Interactive display of all generated 2x2 charts
+- Navigation between different analysis results
+- Zoom and pan capabilities for detailed examination
+
+---
+
+### **Display Charts Interactive**
+**Script:** `utilities/display_charts_interactive.py`
+
+```bash
+python utilities/display_charts_interactive.py
+```
+
+**Features:**
+- Interactive chart viewer with advanced controls
+- Side-by-side comparison capabilities
+- Export and annotation tools
+
+---
+
+### **Simple Run and Show**
+**Script:** `utilities/simple_run_and_show.py`
+
+```bash
+python utilities/simple_run_and_show.py
+```
+
+**Features:**
+- One-click execution and display
+- Simplified interface for quick analysis
+- Automatic chart generation and viewing
 
 ---
 
@@ -301,10 +460,16 @@ python generators/fig15_10_130mhz_generator.py
 
 # System Monitoring
 python generators/fig28_raspberry_pi_cpu_throttling.py
+python system_monitoring/cpu_temperature_analysis.py  # Figure 29
 
 # Comprehensive Analysis
 python generators/generate_2x2_charts.py
 python generators/generate_corrected_charts.py
+python generators/generate_six_standardized_charts.py
+python generators/generate_less_cluttered_april15th.py
+
+# Automation Tools
+python automation/run_all_2x2_charts.py
 ```
 
 ### **Batch Processing:**
