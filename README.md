@@ -1,7 +1,7 @@
-# Ionospheric foF2 Critical Frequency Analysis
+# BearWave Paper 2 - Ionospheric foF2 Critical Frequency Analysis
 
 ## 📊 Overview
-Comprehensive analysis toolkit for ionospheric foF2 (critical frequency) data from Guam and Darwin monitoring stations. Provides standardized 2x2 chart layouts for professional scientific reports.
+This repository contains the complete analysis code for **BearWave Paper 2** - a comprehensive ionospheric foF2 (critical frequency) analysis toolkit. The code analyzes data from Guam and Darwin monitoring stations and provides standardized 2x2 chart layouts for professional scientific reports.
 
 ## 🚀 Quick Start
 
