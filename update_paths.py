@@ -31,13 +31,13 @@ def update_paths_in_file(filepath):
         # Path replacements
         replacements = [
             # NVIS data file paths
-            (r'/Users/samanthabutterworth/Desktop/Marks_phD/NVIS_data\.xlsx', 'data/NVIS_data.xlsx'),
-            (r'/Users/samanthabutterworth/Desktop/NVIS_data\.xlsx', 'data/NVIS_data.xlsx'),
-            
+            (r'/Users/[^/]+/Desktop/Marks_phD/NVIS_data\.xlsx', 'data/NVIS_data.xlsx'),
+            (r'/Users/[^/]+/Desktop/NVIS_data\.xlsx', 'data/NVIS_data.xlsx'),
+
             # Output directory paths
-            (r'/Users/samanthabutterworth/Desktop/test/test2/corrected', 'output/corrected'),
-            (r'/Users/samanthabutterworth/Desktop/test/test2', 'output'),
-            (r'/Users/samanthabutterworth/Desktop/test', 'output'),
+            (r'/Users/[^/]+/Desktop/test/test2/corrected', 'output/corrected'),
+            (r'/Users/[^/]+/Desktop/test/test2', 'output'),
+            (r'/Users/[^/]+/Desktop/test', 'output'),
             (r'/Users/samanthabutterworth/Desktop/Marks_phD', 'output'),
             
             # Desktop path (general)
