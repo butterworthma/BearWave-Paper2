@@ -407,7 +407,7 @@ python utilities/simple_run_and_show.py
 
 ### **Core Analysis Scripts:**
 ```
-📁 analysis/
+📁 analysis/ (6 core ionospheric analysis scripts)
 ├── darwin_april15-28_fof2_7years.py    # Darwin 2-week analysis
 ├── darwin_april15_fof2_7years.py       # Darwin single day
 ├── darwin_fof2_april.py                # Darwin full month
@@ -415,16 +415,29 @@ python utilities/simple_run_and_show.py
 ├── guam_april15_fof2_7years.py         # Guam single day
 └── guam_fof2_april.py                  # Guam full month
 
-📁 generators/
-├── fig10_5mhz_generator.py             # Figure 10: 5 GHz
-├── fig14_7_1mhz_generator.py           # Figure 14: 7.1 MHz
-├── fig15_10_130mhz_generator.py        # Figure 15: 10.130 MHz
-├── fig28_raspberry_pi_cpu_throttling.py # Figure 28: CPU temp
-├── generate_2x2_charts.py              # 2x2 comparisons
-└── generate_corrected_charts.py        # Corrected analysis
+📁 generators/ (Figure generators - LATEST VERSIONS)
+├── fig10_5mhz_generator.py             # Figure 10: 5 GHz (Sep 21 21:40)
+├── fig14_7_1mhz_generator.py           # Figure 14: 7.1 MHz (Sep 21 23:04) ⭐
+├── fig15_10_130mhz_generator.py        # Figure 15: 10.130 MHz (Sep 21 23:05) ⭐
+├── fig28_raspberry_pi_cpu_throttling.py # Figure 28: CPU temp (Sep 21 23:18) ⭐
+├── generate_2x2_charts.py              # 2x2 comparisons (Sep 21 23:23) ⭐
+├── generate_corrected_charts.py        # Corrected analysis (outputs "new_standard_")
+├── generate_six_standardized_charts.py # Batch generator (6 charts)
+├── generate_less_cluttered_april15th.py # Simplified April 15th charts
+└── field_test_results_generator.py     # Field test results
 
 📁 system_monitoring/
-└── cpu_temperature_analysis.py         # Comprehensive thermal analysis
+└── cpu_temperature_analysis.py         # Figure 29: CPU analysis (Sep 21 23:13) ⭐
+
+📁 automation/ (Batch processing tools)
+├── run_all_2x2_charts.py              # Execute all 6 analysis scripts
+├── apply_standardized_format_to_all.py # Apply consistent formatting
+└── generate_all_charts_to_test_folder.py # Generate all to test directory
+
+📁 utilities/ (Interactive tools)
+├── show_all_2x2_charts.py             # Display generated charts
+├── display_charts_interactive.py       # Interactive chart viewer
+└── simple_run_and_show.py             # One-click execution
 ```
 
 ### **Data Files:**
