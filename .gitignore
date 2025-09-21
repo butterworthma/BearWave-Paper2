@@ -4,6 +4,11 @@
 *.jpeg
 *.pdf
 
+# Exception: Include paper figures (Figs 10, 14, 15)
+!output/5_GHz_1_W_-9.7_dB_+-6.4_2023-04-18_to_2023-04-19_28h_16m.png
+!output/7.078_MHz_5_W_-0.0_dB_+-0.4_2023-04-18_9h_9m.png
+!output/10.130_MHz_-12.1_dB_+-5.6_2023-04-20_15h_10m.png
+
 # Data files (too large/sensitive for git)
 *.xlsx
 *.xls
