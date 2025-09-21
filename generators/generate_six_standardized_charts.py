@@ -23,7 +23,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from standardized_layout_enforcer import *
 
 # Configuration
-NVIS_DATA_FILE = "/Users/samanthabutterworth/Desktop/Marks_phD/NVIS_data.xlsx"
+NVIS_DATA_FILE = "data/NVIS_data.xlsx"
 
 def load_guam_data():
     """Load Guam data for chart generation"""
@@ -206,7 +206,7 @@ def generate_all_six_charts():
     print()
     
     # Create test folder if it doesn't exist
-    test_folder = "/Users/samanthabutterworth/Desktop/test"
+    test_folder = "output"
     if not os.path.exists(test_folder):
         os.makedirs(test_folder)
         print(f"📁 Created test folder: {test_folder}")

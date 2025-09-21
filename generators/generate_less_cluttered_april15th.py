@@ -24,7 +24,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from standardized_layout_enforcer import *
 
 # Configuration
-NVIS_DATA_FILE = "/Users/samanthabutterworth/Desktop/Marks_phD/NVIS_data.xlsx"
+NVIS_DATA_FILE = "data/NVIS_data.xlsx"
 
 def plot_less_cluttered_temporal_progression(ax, df, year_columns, colors, title="24-hour foF2 Progression"):
     """
@@ -228,7 +228,7 @@ def create_less_cluttered_april15th_chart(station_name, data, visualization_type
     apply_standardized_layout(fig)
     
     # Save to test2 folder
-    test2_folder = "/Users/samanthabutterworth/Desktop/test/test2"
+    test2_folder = "output"
     if not os.path.exists(test2_folder):
         os.makedirs(test2_folder)
         print(f"📁 Created test2 folder: {test2_folder}")
@@ -279,7 +279,7 @@ def main():
     print("="*45)
     
     # Check results
-    test2_folder = "/Users/samanthabutterworth/Desktop/test/test2"
+    test2_folder = "output"
     if os.path.exists(test2_folder):
         png_files = [f for f in os.listdir(test2_folder) if f.endswith('.png')]
         print(f"📊 Found {len(png_files)} charts in test2 folder:")

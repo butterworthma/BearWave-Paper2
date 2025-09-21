@@ -17,9 +17,9 @@ from matplotlib.ticker import MaxNLocator
 
 # ============ CONFIG ============
 FILES = [
-    "/Users/samanthabutterworth/Desktop/final7.1_new.xlsx",
-    "/Users/samanthabutterworth/Desktop/Marks_phD/final_10.130.xlsx",
-    "/Users/samanthabutterworth/Desktop/Marks_phD/5_GHZ_Standardized_data_preview__first_200_rows_.csv",
+    "output/final7.1_new.xlsx",
+    "output/final_10.130.xlsx",
+    "output/5_GHZ_Standardized_data_preview__first_200_rows_.csv",
     # add more files here...
 ]
 

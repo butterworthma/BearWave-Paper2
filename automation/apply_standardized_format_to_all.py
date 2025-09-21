@@ -40,7 +40,7 @@ def run_script_with_standardized_format(script_name):
     try:
         # Run the script using the virtual environment
         result = subprocess.run([
-            "/Users/samanthabutterworth/PycharmProjects/pythonProject3/venv/bin/python",
+            "python",
             script_path
         ], 
         cwd="/Users/samanthabutterworth/PycharmProjects/pythonProject3",

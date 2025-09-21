@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 import os
 
 # Configuration
-NVIS_DATA_FILE = "/Users/samanthabutterworth/Desktop/Marks_phD/NVIS_data.xlsx"
+NVIS_DATA_FILE = "data/NVIS_data.xlsx"
 DARWIN_LAT = -12.4634
 DARWIN_LON = 130.8456
 DISTANCE_TO_DGFC = 1400  # km

@@ -41,42 +41,42 @@ def interactive_chart_viewer():
     
     charts = {
         '1': {
-            'path': '/Users/samanthabutterworth/Desktop/Marks_phD/best_quality_7_1_MHz.png',
+            'path': 'output/best_quality_7_1_MHz.png',
             'title': '7.1 MHz - Best Quality Individual Chart',
             'description': 'Morning period (9h 9m) - Excellent SNR stability (±0.4 dB)'
         },
         '2': {
-            'path': '/Users/samanthabutterworth/Desktop/Marks_phD/best_quality_10_130_MHz.png',
+            'path': 'output/best_quality_10_130_MHz.png',
             'title': '10.130 MHz - Best Quality Individual Chart',
             'description': 'Full day coverage (15h 10m) - Best continuous period'
         },
         '3': {
-            'path': '/Users/samanthabutterworth/Desktop/Marks_phD/best_quality_5_GHz.png',
+            'path': 'output/best_quality_5_GHz.png',
             'title': '5 GHz - Best Quality Individual Chart',
             'description': 'Multi-day period (28h 16m) - Highest quality score (0.741)'
         },
         '4': {
-            'path': '/Users/samanthabutterworth/Desktop/Marks_phD/best_quality_analysis.png',
+            'path': 'output/best_quality_analysis.png',
             'title': 'Best Quality Comparison Chart',
             'description': 'All three frequencies compared - No data loss periods'
         },
         '5': {
-            'path': '/Users/samanthabutterworth/Desktop/Marks_phD/data_quality_comparison.png',
+            'path': 'output/data_quality_comparison.png',
             'title': 'Data Quality Metrics Chart',
             'description': 'Quality scores, density, and stability comparison'
         },
         '6': {
-            'path': '/Users/samanthabutterworth/Desktop/Marks_phD/nvis_ionospheric_analysis.png',
+            'path': 'output/nvis_ionospheric_analysis.png',
             'title': 'NVIS Ionospheric Analysis',
             'description': 'Real ionospheric data correlation with measurements'
         },
         '7': {
-            'path': '/Users/samanthabutterworth/Desktop/Marks_phD/nvis_propagation_model.png',
+            'path': 'output/nvis_propagation_model.png',
             'title': 'NVIS Propagation Model',
             'description': 'Theoretical 24-hour propagation predictions'
         },
         '8': {
-            'path': '/Users/samanthabutterworth/Desktop/Marks_phD/best_24h_comparison.png',
+            'path': 'output/best_24h_comparison.png',
             'title': 'Previous 24-Hour Comparison',
             'description': 'Earlier analysis with longer periods'
         }
@@ -183,7 +183,7 @@ def create_chart_gallery(charts, available_charts):
     plt.subplots_adjust(top=0.93)
     
     # Save gallery
-    gallery_file = '/Users/samanthabutterworth/Desktop/Marks_phD/interactive_chart_gallery.png'
+    gallery_file = 'output/interactive_chart_gallery.png'
     plt.savefig(gallery_file, dpi=120, bbox_inches='tight')
     print(f"📁 Gallery saved: {gallery_file}")
     
@@ -194,13 +194,13 @@ def display_all_charts_slideshow():
     """Display all charts in slideshow mode"""
     
     charts = [
-        ('/Users/samanthabutterworth/Desktop/Marks_phD/best_quality_7_1_MHz.png', '7.1 MHz - Best Quality'),
-        ('/Users/samanthabutterworth/Desktop/Marks_phD/best_quality_10_130_MHz.png', '10.130 MHz - Best Quality'),
-        ('/Users/samanthabutterworth/Desktop/Marks_phD/best_quality_5_GHz.png', '5 GHz - Best Quality'),
-        ('/Users/samanthabutterworth/Desktop/Marks_phD/best_quality_analysis.png', 'Best Quality Comparison'),
-        ('/Users/samanthabutterworth/Desktop/Marks_phD/data_quality_comparison.png', 'Quality Metrics'),
-        ('/Users/samanthabutterworth/Desktop/Marks_phD/nvis_ionospheric_analysis.png', 'NVIS Ionospheric Analysis'),
-        ('/Users/samanthabutterworth/Desktop/Marks_phD/nvis_propagation_model.png', 'NVIS Propagation Model')
+        ('output/best_quality_7_1_MHz.png', '7.1 MHz - Best Quality'),
+        ('output/best_quality_10_130_MHz.png', '10.130 MHz - Best Quality'),
+        ('output/best_quality_5_GHz.png', '5 GHz - Best Quality'),
+        ('output/best_quality_analysis.png', 'Best Quality Comparison'),
+        ('output/data_quality_comparison.png', 'Quality Metrics'),
+        ('output/nvis_ionospheric_analysis.png', 'NVIS Ionospheric Analysis'),
+        ('output/nvis_propagation_model.png', 'NVIS Propagation Model')
     ]
     
     print("🎬 Starting slideshow...")

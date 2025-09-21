@@ -21,7 +21,7 @@ import os
 import sys
 
 # Configuration
-NVIS_DATA_FILE = "/Users/samanthabutterworth/Desktop/Marks_phD/NVIS_data.xlsx"
+NVIS_DATA_FILE = "data/NVIS_data.xlsx"
 
 # Standardized layout configuration
 STANDARD_LAYOUT = {
@@ -313,7 +313,7 @@ def main():
     print()
     
     # Create corrected folder
-    corrected_folder = "/Users/samanthabutterworth/Desktop/test/test2/corrected"
+    corrected_folder = "output/corrected"
     if not os.path.exists(corrected_folder):
         os.makedirs(corrected_folder)
         print(f"📁 Created corrected folder: {corrected_folder}")

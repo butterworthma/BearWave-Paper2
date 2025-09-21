@@ -241,7 +241,7 @@ def save_standardized_chart(fig, filename):
     chart_filename = f"new_standard_{filename}_{timestamp}.png"
 
     # Create test folder on desktop if it doesn't exist
-    desktop_path = "/Users/samanthabutterworth/Desktop"
+    desktop_path = "output"
     test_folder = os.path.join(desktop_path, "test")
 
     if not os.path.exists(test_folder):

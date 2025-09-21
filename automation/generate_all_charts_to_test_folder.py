@@ -35,7 +35,7 @@ def run_fof2_script_with_test_folder(script_name, description):
     try:
         # Run the script using the virtual environment
         result = subprocess.run([
-            "/Users/samanthabutterworth/PycharmProjects/pythonProject3/venv/bin/python",
+            "python",
             script_path
         ], 
         cwd="/Users/samanthabutterworth/PycharmProjects/pythonProject3",
@@ -79,7 +79,7 @@ def generate_all_fof2_charts():
     print()
     
     # Create test folder if it doesn't exist
-    test_folder = "/Users/samanthabutterworth/Desktop/test"
+    test_folder = "output"
     if not os.path.exists(test_folder):
         os.makedirs(test_folder)
         print(f"📁 Created test folder: {test_folder}")
@@ -167,7 +167,7 @@ def check_test_folder_contents():
     print(f"\n📁 CHECKING TEST FOLDER CONTENTS")
     print("="*35)
     
-    test_folder = "/Users/samanthabutterworth/Desktop/test"
+    test_folder = "output"
     
     if not os.path.exists(test_folder):
         print("❌ Test folder does not exist")
@@ -213,7 +213,7 @@ def clean_test_folder():
     print("🧹 CLEANING TEST FOLDER")
     print("="*25)
     
-    test_folder = "/Users/samanthabutterworth/Desktop/test"
+    test_folder = "output"
     
     if not os.path.exists(test_folder):
         print("❌ Test folder does not exist")
@@ -264,7 +264,7 @@ def main():
     elif choice == "3":
         clean_test_folder()
     elif choice == "4":
-        test_folder = "/Users/samanthabutterworth/Desktop/test"
+        test_folder = "output"
         try:
             subprocess.run(['open', test_folder], check=True)
             print(f"✅ Opened test folder in Finder")

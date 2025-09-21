@@ -19,7 +19,7 @@ except ImportError:
     print("⚠️ Standardized format not available, using default formatting")
 
 # Configuration
-NVIS_DATA_FILE = "/Users/samanthabutterworth/Desktop/Marks_phD/NVIS_data.xlsx"
+NVIS_DATA_FILE = "data/NVIS_data.xlsx"
 GUAM_LAT = 13.4443
 GUAM_LON = 144.7937
 DISTANCE_TO_DGFC = 2100  # km

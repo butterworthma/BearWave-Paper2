@@ -132,7 +132,7 @@ def run_single_script(script_info):
     try:
         # Run the script
         result = subprocess.run([
-            "/Users/samanthabutterworth/PycharmProjects/pythonProject3/venv/bin/python",
+            "python",
             script_path
         ], 
         cwd="/Users/samanthabutterworth/PycharmProjects/pythonProject3",
