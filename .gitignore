@@ -13,7 +13,10 @@
 *.xlsx
 *.xls
 *.csv
-NVIS_data.xlsx
+
+# Exception: Include essential data files for repository functionality
+!data/NVIS_data.xlsx
+!data/5_GHZ_Standardized_data_preview__first_200_rows_.csv
 
 # Output directories
 output/
