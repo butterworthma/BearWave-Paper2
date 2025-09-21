@@ -1,7 +1,7 @@
-# BearWave Paper 2 - Ionospheric foF2 Critical Frequency Analysis
+# Evaluating NVIS for Remote Wildlife Monitoring: A Field Trial in the Borneo Rainforest
 
 ## 📊 Overview
-This repository contains the complete analysis code for **BearWave Paper 2** - a comprehensive ionospheric foF2 (critical frequency) analysis toolkit. The code analyzes data from Guam and Darwin monitoring stations and provides standardized 2x2 chart layouts for professional scientific reports.
+This repository contains the complete analysis code for **"Evaluating NVIS for Remote Wildlife Monitoring: A Field Trial in the Borneo Rainforest"** - a comprehensive study of Near Vertical Incidence Skywave (NVIS) communication for wildlife monitoring applications. The code includes ionospheric foF2 (critical frequency) analysis, field test results, and NVIS propagation modeling with data from Guam and Darwin monitoring stations.
 
 ## 🚀 Quick Start
 
@@ -37,19 +37,29 @@ python automation/run_all_2x2_charts.py
 - Place in the `data/` directory
 - Update file paths in scripts if needed
 
-## 📊 Generated Charts
-- Standardized 2x2 layout with consistent positioning
-- Hourly patterns, statistical distributions, temporal progression
-- NVIS frequency band analysis
-- Professional formatting for reports
+## 📊 Generated Charts & Figures
+- **Field Test Results**: Figs 10, 14, 15 (5 GHz, 7.078 MHz, 10.130 MHz)
+- **Ionospheric Analysis**: Figs 22-27 (foF2 critical frequency analysis)
+- **Standardized 2x2 layouts** with consistent positioning
+- **NVIS frequency band analysis** for wildlife monitoring optimization
+- **Professional formatting** ready for scientific publication
 
 ## 🔧 Key Features
+- **Field-Tested NVIS Communication**: Real-world Borneo rainforest deployment
+- **Ionospheric foF2 Analysis**: Multi-year comparative studies (2017-2023)
+- **Wildlife Monitoring Focus**: Optimized for remote conservation applications
 - **Standardized Layout Enforcer**: Ensures consistent chart positioning
-- **Correct foF2 Calculations**: Uses proper ionospheric physics
-- **Multi-Station Analysis**: Guam and Darwin comparative studies
-- **Professional Formatting**: Ready for scientific reports
+- **Multi-Station Analysis**: Guam and Darwin ionospheric monitoring
+- **Portable Codebase**: Relative paths work on any system
 
 See `SCRIPT_DEPENDENCY_MAP.md` for detailed file relationships.
 
+## 🌍 Research Context
+This work supports remote wildlife monitoring in the Borneo rainforest at the Danau Girang Field Centre (DGFC), Malaysia. The study evaluates NVIS communication effectiveness for conservation applications in challenging tropical environments.
+
 ## 📞 Support
 For issues or questions, refer to the documentation in the `docs/` directory.
+
+## 📄 Citation
+**"Evaluating NVIS for Remote Wildlife Monitoring: A Field Trial in the Borneo Rainforest"**
+*PhD Research - Cardiff University*

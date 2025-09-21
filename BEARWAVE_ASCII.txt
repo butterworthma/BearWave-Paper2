@@ -5,7 +5,8 @@
 ██████╔╝███████╗██║  ██║██║  ██║╚███╔███╔╝██║  ██║ ╚████╔╝ ███████╗
 ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚══╝╚══╝ ╚═╝  ╚═╝  ╚═══╝  ╚══════╝
 
-    🌊 PAPER 2 - IONOSPHERIC foF2 CRITICAL FREQUENCY ANALYSIS 🌊
+  🌿 EVALUATING NVIS FOR REMOTE WILDLIFE MONITORING 🌿
+    🌳 A FIELD TRIAL IN THE BORNEO RAINFOREST 🌳
 
                     ╭─────────────────────────────────╮
                     │    📡 IONOSPHERIC MONITORING    │
@@ -84,14 +85,15 @@
                     ╰─────────────────────────────────╯
 
     ╭─────────────────────────────────────────────────────────────╮
-    │                    🏆 BEARWAVE PAPER 2                      │
-    │              Ionospheric foF2 Analysis Toolkit             │
+    │           🏆 EVALUATING NVIS FOR REMOTE WILDLIFE           │
+    │              MONITORING: A FIELD TRIAL IN THE              │
+    │                   BORNEO RAINFOREST                        │
     │                                                             │
-    │    "Advancing NVIS Communication Through Ionospheric       │
-    │     Critical Frequency Analysis and Standardized           │
-    │     Multi-Station Comparative Studies"                     │
+    │    "Advancing Conservation Through NVIS Communication      │
+    │     Technology in Challenging Tropical Environments"       │
     │                                                             │
     │              🎓 PhD Research - Cardiff University           │
+    │              🌿 Danau Girang Field Centre, Malaysia        │
     ╰─────────────────────────────────────────────────────────────╯
 
                               ╭─────────────╮
