@@ -19,6 +19,7 @@
 !data/5_GHZ_Standardized_data_preview__first_200_rows_.csv
 !data/7_1_MHz_Standardized_data.xlsx
 !data/10_130_MHz_Standardized_data.xlsx
+!data/cpu_temperature_data.xlsx
 
 # Output directories
 output/
