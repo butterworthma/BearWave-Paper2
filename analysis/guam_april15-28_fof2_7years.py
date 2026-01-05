@@ -452,16 +452,20 @@ def create_guam_april15_28_analysis(guam_data):
         ax4.set_ylim(0, 40)
 
     # Apply standardized layout and save
+    # Define title5 for both branches
+    title5 = "Guam_foF2_April_15-28_Combined_Overview_7_Year_Comparison_2017-2023"
+    
     if STANDARDIZED_FORMAT_AVAILABLE:
         apply_standardized_layout(fig)
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         filename = create_standardized_filename("Guam", "April_15-28", "Combined_Overview", timestamp)
         save_standardized_chart(fig, filename)
+        # Extract title from filename for display (remove path and extension)
+        title5 = os.path.basename(filename).replace('.png', '')
     else:
         # Fallback to original formatting
         plt.tight_layout()
         plt.subplots_adjust(top=0.90)
-        title5 = "Guam_foF2_April_15-28_Combined_Overview_7_Year_Comparison_2017-2023"
         output_file5 = f"/Users/samanthabutterworth/PycharmProjects/pythonProject3/{title5}.png"
         plt.savefig(output_file5, dpi=160, bbox_inches='tight')
         print(f"✅ Saved: {title5}.png")

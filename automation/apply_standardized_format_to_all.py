@@ -13,6 +13,7 @@ License: MIT
 
 import os
 import subprocess
+import sys
 from datetime import datetime
 
 # List of foF2 analysis scripts to standardize
@@ -28,22 +29,41 @@ FOF2_SCRIPTS = [
 def run_script_with_standardized_format(script_name):
     """Run a foF2 analysis script with standardized formatting"""
     
-    script_path = f"Mark_paper_2/{script_name}"
+    # Get the workspace root directory
+    workspace_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    script_path = os.path.join(workspace_root, "analysis", script_name)
     
     if not os.path.exists(script_path):
-        print(f"❌ Script not found: {script_name}")
+        print(f"❌ Script not found: {script_path}")
         return False
     
     print(f"\n📊 Running {script_name} with standardized format...")
     print("="*60)
     
     try:
-        # Run the script using the virtual environment
+        # Set up environment to include core directory in Python path
+        env = os.environ.copy()
+        pythonpath = env.get('PYTHONPATH', '')
+        core_dir = os.path.join(workspace_root, "core")
+        if pythonpath:
+            env['PYTHONPATH'] = f"{core_dir}:{pythonpath}"
+        else:
+            env['PYTHONPATH'] = core_dir
+        
+        # Use virtual environment Python if it exists, otherwise use system python3
+        venv_python = os.path.join(workspace_root, "venv", "bin", "python3")
+        if os.path.exists(venv_python):
+            python_cmd = venv_python
+        else:
+            python_cmd = "python3"
+        
+        # Run the script from the workspace root so relative paths work
         result = subprocess.run([
-            "python",
+            python_cmd,
             script_path
         ], 
-        cwd="/Users/samanthabutterworth/PycharmProjects/pythonProject3",
+        cwd=workspace_root,
+        env=env,
         capture_output=True, 
         text=True, 
         timeout=300)  # 5 minute timeout
@@ -78,10 +98,14 @@ def generate_all_standardized_charts():
     print("This will create consistent, report-ready charts for all stations and periods")
     print()
     
+    # Get the workspace root directory
+    workspace_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    
     # Check if standardized format module exists
-    if not os.path.exists("Mark_paper_2/standardized_report_format.py"):
+    standardized_format_path = os.path.join(workspace_root, "core", "standardized_report_format.py")
+    if not os.path.exists(standardized_format_path):
         print("❌ Standardized format module not found!")
-        print("   Please ensure standardized_report_format.py exists in Mark_paper_2/")
+        print(f"   Expected at: {standardized_format_path}")
         return
     
     successful_runs = []
@@ -108,7 +132,7 @@ def generate_all_standardized_charts():
         for script in failed_runs:
             print(f"  • {script}")
     
-    print(f"\n📁 All charts saved to: /Users/samanthabutterworth/PycharmProjects/pythonProject3/")
+    print(f"\n📁 All charts saved to: {workspace_root}/")
     
     # List expected output files
     print(f"\n📊 EXPECTED STANDARDIZED CHART FILES:")
@@ -144,7 +168,9 @@ def check_chart_files():
     print("\n📋 CHECKING EXISTING STANDARDIZED CHART FILES:")
     print("="*50)
     
-    chart_dir = "/Users/samanthabutterworth/PycharmProjects/pythonProject3/"
+    # Get the workspace root directory
+    workspace_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    chart_dir = workspace_root
     
     # Look for standardized chart files
     standardized_files = []
@@ -168,31 +194,45 @@ def check_chart_files():
 def main():
     """Main function"""
     
-    print("🎨 STANDARDIZED foF2 CHART GENERATOR")
-    print("="*40)
-    print("Options:")
-    print("1. Generate all standardized charts")
-    print("2. Check existing chart files")
-    print("3. Run specific script")
-    print()
-    
-    choice = input("Select option (1-3, default 1): ").strip()
+    # Check if running non-interactively (e.g., from command line with argument)
+    if len(sys.argv) > 1:
+        choice = sys.argv[1]
+    else:
+        print("🎨 STANDARDIZED foF2 CHART GENERATOR")
+        print("="*40)
+        print("Options:")
+        print("1. Generate all standardized charts")
+        print("2. Check existing chart files")
+        print("3. Run specific script")
+        print()
+        
+        try:
+            choice = input("Select option (1-3, default 1): ").strip()
+        except EOFError:
+            # Running non-interactively, default to option 1
+            choice = "1"
+            print("Running non-interactively, defaulting to option 1: Generate all standardized charts")
     
     if choice == "2":
         check_chart_files()
     elif choice == "3":
-        print("\nAvailable scripts:")
-        for i, script in enumerate(FOF2_SCRIPTS, 1):
-            print(f"  {i}. {script}")
+        if len(sys.argv) > 2:
+            script_index = int(sys.argv[2]) - 1
+        else:
+            print("\nAvailable scripts:")
+            for i, script in enumerate(FOF2_SCRIPTS, 1):
+                print(f"  {i}. {script}")
+            
+            try:
+                script_index = int(input(f"\nSelect script (1-{len(FOF2_SCRIPTS)}): ")) - 1
+            except (EOFError, ValueError):
+                print("❌ Invalid input")
+                return
         
-        try:
-            script_choice = int(input(f"\nSelect script (1-{len(FOF2_SCRIPTS)}): ")) - 1
-            if 0 <= script_choice < len(FOF2_SCRIPTS):
-                run_script_with_standardized_format(FOF2_SCRIPTS[script_choice])
-            else:
-                print("❌ Invalid selection")
-        except ValueError:
-            print("❌ Invalid input")
+        if 0 <= script_index < len(FOF2_SCRIPTS):
+            run_script_with_standardized_format(FOF2_SCRIPTS[script_index])
+        else:
+            print("❌ Invalid selection")
     else:
         # Default: generate all charts
         generate_all_standardized_charts()
