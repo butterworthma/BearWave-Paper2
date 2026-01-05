@@ -1,7 +1,11 @@
 # Evaluating NVIS for Remote Wildlife Monitoring: A Field Trial in the Borneo Rainforest
 
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/butterworthma/BearWave-Paper2)
+
 ## 📊 Overview
 This repository contains the complete analysis code for **"Evaluating NVIS for Remote Wildlife Monitoring: A Field Trial in the Borneo Rainforest"** - a comprehensive study of Near Vertical Incidence Skywave (NVIS) communication for wildlife monitoring applications. The code includes ionospheric foF2 (critical frequency) analysis, field test results, and NVIS propagation modeling with data from Guam and Darwin monitoring stations.
+
+**GitHub Repository:** [https://github.com/butterworthma/BearWave-Paper2](https://github.com/butterworthma/BearWave-Paper2)
 
 ## 🚀 Quick Start
 
@@ -58,7 +62,13 @@ See `SCRIPT_DEPENDENCY_MAP.md` for detailed file relationships.
 This work supports remote wildlife monitoring in the Borneo rainforest at the Danau Girang Field Centre (DGFC), Malaysia. The study evaluates NVIS communication effectiveness for conservation applications in challenging tropical environments.
 
 ## 📞 Support
-For issues or questions, refer to the documentation in the `docs/` directory.
+For issues or questions:
+- Open an issue on [GitHub](https://github.com/butterworthma/BearWave-Paper2/issues)
+- Refer to the documentation in the `docs/` directory
+
+## 🔗 Repository Links
+- **GitHub Repository:** [https://github.com/butterworthma/BearWave-Paper2](https://github.com/butterworthma/BearWave-Paper2)
+- **Clone Repository:** `git clone https://github.com/butterworthma/BearWave-Paper2.git`
 
 ## 📄 Citation
 **"Evaluating NVIS for Remote Wildlife Monitoring: A Field Trial in the Borneo Rainforest"**

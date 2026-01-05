@@ -4,6 +4,9 @@
 *.jpeg
 *.pdf
 
+# Exception: Include the comprehensive stacked charts
+!All_foF2_Charts_Stacked_Columns_2017-2023.png
+
 # Exception: Include paper figures (Figs 10, 14, 15)
 !output/5_GHz_1_W_-9.7_dB_+-6.4_2023-04-18_to_2023-04-19_28h_16m.png
 !output/7.078_MHz_5_W_-0.0_dB_+-0.4_2023-04-18_9h_9m.png

@@ -1,6 +1,8 @@
 # Script Dependency Map for Git Repository
 ## 📋 Complete Analysis of Python Scripts and Dependencies
 
+**GitHub Repository:** [https://github.com/butterworthma/BearWave-Paper2](https://github.com/butterworthma/BearWave-Paper2)
+
 ### 🎯 KEY FILES FOR GIT REPOSITORY
 
 ## 🔧 CORE MODULES (MUST INCLUDE)

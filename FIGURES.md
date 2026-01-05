@@ -2,6 +2,8 @@
 
 **"Ionospheric foF2 Analysis and System Performance"**
 
+**GitHub Repository:** [https://github.com/butterworthma/BearWave-Paper2](https://github.com/butterworthma/BearWave-Paper2)
+
 This document showcases all the figures and analysis plots generated for Paper 2, presenting comprehensive ionospheric analysis, multi-frequency performance evaluation, and system monitoring results from the BearWave deployment.
 
 ---
